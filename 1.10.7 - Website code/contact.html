@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Matthew Monti - Portfolio</title>
+    <link href="img/Robot-Tab-Logo.png" rel="icon">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    >
+    <link href="css/style.production.css" rel="stylesheet" type="text/css" >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap"
+      rel="stylesheet"
+    >
+  </head>
+  <!-- Header including the logo and the main navigation -->
+  <header class="page-header">
+    <!-- Add Logo here -->
+    <img
+      src="img/Robot-Large-Logo.png"
+      alt="logo"
+      class="robot"
+    >
+    <nav class="main-navigation page-header__item">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list__item"
+            >Home</a
+          >
+        </li>
+        <li role="presentation">
+          <a href="about.html" role="menuitem" class="navigation-list__item"
+            >About</a
+          >
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list__item"
+            >Contact</a
+          >
+        </li>
+        <li role="presentation">
+          <a
+            href="Sample_Work.html"
+            role="menuitem"
+            class="navigation-list__item"
+            >Sample Work</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="contact-info">
+      <h1 id="contact">Contact me</h1>
+      <strong>Matthew Monti</strong><br>
+      5101 60th Street Road<br>
+      Apartment 3104<br>
+      34474 Ocala, Florida<br>
+      <br>
+      <form name="contact" method="POST" data-netlify="true">
+        <strong>
+          <label for="contact-email" class="standard-label"> Your Email: </label>
+          <br>
+          <input type="text" name="email" id="contact-email" required>
+          <br>
+        </strong>
+        <strong>
+          <label for="contact-telephone" class="standard-label">Your Telephone: </label>
+          <br>
+          <input type="tel" name="telephone" id="contact-telephone" pattern="\d{3}[\]\d{3}[\]\d{4}" required>
+          <br>
+        </strong>
+        <strong>
+          <label for="standard-label">Comment on my coding projects: </label>
+          <br>
+          <textarea name="message"
+            rows="5" cols="40"
+            id="standard-label"
+            maxlength="240"
+            required
+          ></textarea
+          ><br>
+        </strong>
+        <br>
+        <button type="submit" class="submit">Submit Message</button>
+      </form>
+  </div>
+</html>
